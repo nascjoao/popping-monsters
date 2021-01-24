@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 body {
