@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    text-decoration: none;
+    outline: none;
+    overscroll-behavior: contain;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    opacity: .7;
+    background: url('https://lpc.opengameart.org/sites/default/files/sand_3_1.png') center center;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button.primary {
+    border: 2px solid #b67121;
+    background: #ffae00;
+    color: black;
+}
+
+button.secondary {
+    border: 2px solid #d69c5a;
+    background: #ffd376;
+    color: #5e4312;
+    font-size: 14px;
+}
+
+h1, h3, i {
+    position: relative;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
