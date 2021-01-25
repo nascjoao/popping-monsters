@@ -1,0 +1,25 @@
+{
+    "short_name": "Popping Monsters",
+    "name": "Popping Monsters: How many can you pop?",
+    "description": "Tap the screen to pop the monsters",
+    "icons": [
+      {
+        "src": "./images/icons/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "./index.html",
+    "background_color": "#E5CC82",
+    "display": "fullscreen",
+    "scope": "https://joaonasc.dev/popping-monsters/",
+    "shortcuts": [
+        {
+          "name": "Pop the monsters",
+          "short_name": "Play",
+          "description": "Tap the screen to pop the monsters",
+          "url": "./play.html",
+          "icons": [{ "src": "./images/icons/icon-192.png", "sizes": "192x192" }]
+        }
+      ]
+  }
