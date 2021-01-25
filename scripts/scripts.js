@@ -42,7 +42,7 @@ setInterval(() => {
 
     monster.addEventListener('mouseenter', () => {
         const audio = document.createElement('audio')
-        audio.src = '../sounds/splat.mp3'
+        audio.src = './sounds/splat.mp3'
         audio.volume = .5
         audio.play()
 
