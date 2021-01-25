@@ -14,13 +14,13 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "./index.html",
+    "start_url": "./menu.html",
     "background_color": "#E5CC82",
     "display": "fullscreen",
     "orientation": "portrait",
     "shortcuts": [
         {
-          "name": "Pop the monsters",
+          "name": "Play: Pop the monsters!",
           "short_name": "Play",
           "description": "Tap the screen to pop the monsters",
           "url": "./play.html",
