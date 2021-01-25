@@ -12,7 +12,6 @@
     "start_url": "./index.html",
     "background_color": "#E5CC82",
     "display": "fullscreen",
-    "scope": "https://joaonasc.dev/popping-monsters/",
     "shortcuts": [
         {
           "name": "Pop the monsters",
