@@ -33,7 +33,7 @@ body::after {
     left: 0;
     z-index: -100;
     opacity: .7;
-    background: url('https://lpc.opengameart.org/sites/default/files/sand_3_1.png') center center;
+    background: url('../images/sand.png') center center;
 }
 
 button {
