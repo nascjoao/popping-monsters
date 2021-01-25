@@ -14,7 +14,6 @@ let storageSurvivors = []
 
 let spawn = 300
 
-
 setInterval(() => {
     const monster = document.createElement('img')
     monster.src = monsters[parseInt(Math.random() * monsters.length)]
@@ -42,6 +41,11 @@ setInterval(() => {
     }, 3000)
 
     monster.addEventListener('mouseenter', () => {
+        const audio = document.createElement('audio')
+        audio.src = '../sounds/splat.mp3'
+        audio.volume = .5
+        audio.play()
+
         monster.src = './images/blood.gif'
 
         score = score + 1
