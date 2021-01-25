@@ -84,7 +84,7 @@ setInterval(() => {
             finalResult.style.color = '#156E09'
 
             const back = document.createElement('a')
-            back.href = '/index.html'
+            back.href = './index.html'
             const leave = document.createElement('button')
             back.appendChild(leave)
             leave.classList.add('secondary')
