@@ -13,7 +13,7 @@
                                   supported by Chrome, Edge, Opera and Firefox */
     text-decoration: none;
     outline: none;
-    overscroll-behavior: contain;
+    overscroll-behavior-y: contain;
 }
 
 body {
