@@ -7,14 +7,14 @@
     right: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 615px) {
     h1, h3, i {
         font-size: 5vw;
         padding: 0 20px;
     }
 
     .monster {
-        width: 12vw;
+        width: 15vw;
     }
 
     #survivors {
