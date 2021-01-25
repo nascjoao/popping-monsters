@@ -1,4 +1,4 @@
-const monsters = ['https://pokecharms.com/data/attachment-files/2016/07/333534_MonsterNPCSprite_GIF.gif']
+const monsters = ['./images/monster.gif']
 
 const scoreElement = document.getElementById('score')
 let score = 0
@@ -42,7 +42,7 @@ setInterval(() => {
     }, 3000)
 
     monster.addEventListener('mouseenter', () => {
-        monster.src = 'https://static.wikia.nocookie.net/tibia/images/3/3f/Blood_Effect.gif/revision/latest/top-crop/width/360/height/360?cb=20150130131025&path-prefix=en'
+        monster.src = './images/blood.gif'
 
         score = score + 1
         scoreElement.innerHTML = `Pontuação: ${score}`
