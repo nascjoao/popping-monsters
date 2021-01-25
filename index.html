@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link rel="shortcut icon" href="./images/monster.gif" type="image/x-icon">
     <title>Popping Monsters</title>
 
@@ -16,9 +19,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#156E09">
 </head>
 <body>
-    <h1 id="score"></h1>
-    <h1 id="survivors"></h1>
+    <header>
+        <div class="brand">
+            <img src="./images/monster.gif">
+            <strong>Popping<br>Monsters</strong>
+        </div>
+        <span>developed with fun<br> by <a href="https://joaonasc.dev" target="_blank">João Nasc</a></span>
+    </header>
+    <div class="buttons">
+        <a href="/play.html"><button class="primary">Play</button></a>
+    </div>
+    <div class="best-score"></div>
     <noscript>Please turn on JavaScript and refresh this page to load the application.</noscript>
-<script src="./scripts.js"></script>
+<script src="./scripts/home.js"></script>
 </body>
 </html>
