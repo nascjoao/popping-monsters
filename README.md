@@ -57,7 +57,7 @@ The _best score_ is registered with the localStorage.
 A manifest file was written for running it as a PWA on mobile.
 
 ### Thank you
-I am glad to have you here. Please, consider to give a star for this repo and share the game with your friends.<br>
+I am glad to have you here. Please, consider to give a **star** for this repo and share the game with your friends.<br>
 Feel free to use it for whatever you want, specially for learn more about the power of JavaScript :)<br>
 It was made with a lot of fun, by me, [@nascjoao](https://github.com/nascjoao).<br>
 THANK YOU!!! 💙️
