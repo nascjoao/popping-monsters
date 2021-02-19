@@ -38,7 +38,7 @@ It is a simple game (my first game 🤩️) and you can check how to play it [he
 ### How to play
 
 #### Goal
-Pop the monsters as many as you can. The monsters appear and stand on the screen for a while. If you do not pop them, they will disappear.
+Pop as many monsters as you can. The monsters appear and stand on the screen for a while. If you do not pop them, they will disappear.
 Losing 10 monsters the game ends. How many can you pop?
 
 #### Desktop
