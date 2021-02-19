@@ -22,6 +22,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: url('../images/sand.png');
+    background-position-x: 0;
+    background-position-y: center;
+    transition: background-position-x 100ms;
 }
 
 body::after {
@@ -31,9 +35,9 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -100;
-    opacity: .7;
-    background: url('../images/sand.png') center center;
+    z-index: -1;
+    opacity: .3;
+    background-color: white;
 }
 
 button {

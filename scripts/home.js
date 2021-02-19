@@ -8,3 +8,12 @@ if (localStorage.getItem('best-score') && localStorage.getItem('best-score') != 
     bestScore.appendChild(star)
     bestScore.append(`Melhor pontuação: ${localStorage.getItem('best-score')}`)
 }
+
+// BACKGROUND ANIMATION
+const bg = document.querySelector('body')
+let bgX = 0
+setInterval(()=> {
+    if (window.screen.width <= 812) bgX = bgX - 2
+    else bgX = bgX - .1
+    bg.style.backgroundPositionX = bgX + '%'
+}, 100)
