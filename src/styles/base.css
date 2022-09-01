@@ -16,16 +16,22 @@
     overscroll-behavior-y: contain;
 }
 
+#__next {
+    width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../images/sand.png');
+    background: url('../../public/images/sand.png');
     background-position-x: 0;
     background-position-y: center;
     transition: background-position-x 100ms;
+    width: 100%;
+    animation: backgroundMotion 15s infinite linear;
 }
 
 body::after {
@@ -35,12 +41,12 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     opacity: .3;
     background-color: white;
 }
 
-button {
+button, a.primary {
     cursor: pointer;
     padding: 10px 25px;
     font-size: 18px;
@@ -48,10 +54,13 @@ button {
     font-weight: bold;
 }
 
-button.primary {
+button.primary, a.primary {
     border: 2px solid #b67121;
     background: #ffae00;
     color: black;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
 }
 
 button.secondary {
