@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import useMonsters from '../hooks/useMonsters'
+import styles from '../styles/game.module.css'
 
 export default function Play() {
   const { monsters, spawnMonsters, hitMonster, survivingMonsters, killedMonsters } = useMonsters()
@@ -10,8 +11,10 @@ export default function Play() {
 
   return (
     <>
-      <h1>Monstros eliminados: {killedMonsters.length}</h1>
-      <h1>Monstros sobreviventes: {survivingMonsters.length}</h1>
+      <div className={styles.score}>
+        <div>Pontuação: {killedMonsters.length}</div>
+        <div>Monstros sobreviventes: {survivingMonsters.length}</div>
+      </div>
       { monsters.map((monster) => (
         <img key={monster.id} src={monster.src} alt="monster" style={{
           position: 'absolute',
