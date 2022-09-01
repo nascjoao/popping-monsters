@@ -8,6 +8,19 @@
     }
 }
 
+@keyframes backgroundMotion {
+    from {
+        background-position-x: 0;
+    } to {
+        background-position-x: -240px;
+    }
+}
+
+.header * {
+    position: relative;
+    z-index: 2;
+}
+
 .brand {
     display: flex;
     flex-direction: column;
@@ -32,7 +45,7 @@
     text-shadow: 3px 3px black, -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
 }
 
-header span {
+.header span {
     font-weight: bold;
     color: black;
     position: absolute;
@@ -41,11 +54,11 @@ header span {
     text-align: right;
 }
 
-header a {
+.header a {
     color: black;
 }
 
-.best-score {
+.bestScore {
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -55,6 +68,20 @@ header a {
     left: 10px;
 }
 
-.best-score i {
+.bestScore i {
     backdrop-filter: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../public/images/sand.png');
+    background-position-x: 0;
+    background-position-y: center;
+    transition: background-position-x 100ms;
+    width: 100%;
+    animation: backgroundMotion 15s infinite linear;
 }
