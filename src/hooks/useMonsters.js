@@ -27,8 +27,8 @@ export default function useMonsters() {
 
         const newMonster = {
           id: generateUuid(),
-          x: Math.abs(Math.floor(Math.random() * window.innerWidth - 100)),
-          y: Math.abs(Math.floor(Math.random() * window.innerHeight - 100)),
+          x: Math.floor(Math.random() * ((window.innerWidth - 100) - 1) + 1),
+          y: Math.floor(Math.random() * ((window.innerHeight - 100) - 100) + 100),
           src: '/images/monster.gif',
         }
 
