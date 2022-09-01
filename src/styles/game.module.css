@@ -1,0 +1,26 @@
+.score {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #b67121;
+  background: #ffae00;
+  color: #160c00;
+  border-radius: 0 0 100% 100%;
+  font-weight: 400;
+  padding: 20px 80px;
+  text-align: center;
+}
+.score div {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+.score div:first-child {
+  font-size: 2rem;
+}
+
+.survivors {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
