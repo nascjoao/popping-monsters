@@ -6,6 +6,7 @@ export default function useMonsters() {
   const [killedMonsters, setKilledMonsters] = useState([])
   const [survivorMonster, setSurvivorMonster] = useState({})
   const [survivingMonsters, setSurvivingMonsters] = useState([])
+  const [spawningMonsters, setSpawningMonsters] = useState([])
 
   useEffect(() => {
     if (survivorMonster.id) {
@@ -17,21 +18,15 @@ export default function useMonsters() {
     }
   }, [survivorMonster])
 
-  function spawnMonsters(interval, limit) {
-    const intervalToSpawn = setInterval(() => {
+  function spawnMonsters(interval) {
+    setTimeout(() => {
+      const newMonster = {
+        id: generateUuid(),
+        x: Math.floor(Math.random() * ((window.innerWidth - 100) - 1) + 1),
+        y: Math.floor(Math.random() * ((window.innerHeight - 100) - 100) + 100),
+        src: '/images/monster.gif',
+      }
       setMonsters((current) => {
-        if (current.length === limit) {
-          clearInterval(intervalToSpawn)
-          return current
-        }
-
-        const newMonster = {
-          id: generateUuid(),
-          x: Math.floor(Math.random() * ((window.innerWidth - 100) - 1) + 1),
-          y: Math.floor(Math.random() * ((window.innerHeight - 100) - 100) + 100),
-          src: '/images/monster.gif',
-        }
-
         setTimeout(() => {
           setMonsters((current) => current.filter((monster) => monster.id !== newMonster.id))
           setSurvivorMonster(newMonster)
@@ -42,8 +37,8 @@ export default function useMonsters() {
           newMonster
         ]
       })
+      setSpawningMonsters((current) => [...current, newMonster])
     }, interval)
-
   }
 
   function hitMonster(id) {
@@ -78,6 +73,7 @@ export default function useMonsters() {
     spawnMonsters,
     hitMonster,
     survivingMonsters,
-    killedMonsters
+    killedMonsters,
+    spawningMonsters
   }
 }
