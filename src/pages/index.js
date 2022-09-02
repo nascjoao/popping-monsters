@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Button from "../components/Button"
 import styles from '../styles/home.module.css'
 
 export default function Home() {
@@ -6,12 +7,10 @@ export default function Home() {
     <main className={styles.home}>
       <header className={styles.header}>
         <div className={styles.brand}>
-            <img src="./images/monster.gif" />
-            <strong>Popping<br />Monsters</strong>
-        </div>  
-        <Link href="/play" passHref>
-          <a className="primary">Jogar</a>
-        </Link>
+            <img src="./images/monster_2.gif" />
+            <img src="./images/logo.png" alt="Popping Monsters" />
+        </div>
+        <Button href="/play">Jogar</Button>
         <span>desenvolvido com diversão<br /> por <a href="https://joaonasc.dev" target="_blank">João Nasc</a></span>
       </header>
       <div className={styles.bestScore}></div>

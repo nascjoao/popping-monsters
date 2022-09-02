@@ -28,7 +28,7 @@ export default function Play() {
   )
 
   return (
-    <>
+    <div className={styles.game}>
       <div className={styles.score}>
         <div>Pontuação: {killedMonsters.length}</div>
         <div>Monstros sobreviventes: {survivingMonsters.length}</div>
@@ -38,12 +38,12 @@ export default function Play() {
           position: 'absolute',
           top: `${monster.y}px`,
           left: `${monster.x}px`,
-          width: '4rem',
+          width: '3rem',
           zIndex: '2'
         }}
         onMouseOver={() => hitMonster(monster.id)}
         />
       )) }
-    </>
+    </div>
   )
 }

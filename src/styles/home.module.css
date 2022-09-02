@@ -1,10 +1,8 @@
 @keyframes pulse {
-    0% {
-        font-size: 2.5rem;
-    } 50% {
-        font-size: 2.9rem;
-    } 100% {
-        font-size: 2.5rem;
+    from {
+        transform: scale(2.5);
+    } to {
+        transform: scale(3);
     }
 }
 
@@ -26,23 +24,15 @@
     flex-direction: column;
     align-items: center;
     height: 40vh;
+    gap: 3rem;
 }
 
 .brand img {
     max-width: 100px;
-    margin-bottom: 10px;
 }
 
-.brand strong {
-    animation: infinite 1000ms pulse;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2.9rem;
-    text-align: center;
-    letter-spacing: 1px;
-
-    color: #ffae00;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 3px 3px black, -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+.brand img:nth-child(2) {
+    animation: infinite 450ms pulse alternate linear;
 }
 
 .header span {
@@ -84,4 +74,16 @@
     transition: background-position-x 100ms;
     width: 100%;
     animation: backgroundMotion 15s infinite linear;
+}
+
+.home::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .9;
+    background: radial-gradient(#1D6155, #0A211D);
 }

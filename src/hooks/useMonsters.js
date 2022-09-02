@@ -24,7 +24,7 @@ export default function useMonsters() {
         id: generateUuid(),
         x: Math.floor(Math.random() * ((window.innerWidth - 100) - 1) + 1),
         y: Math.floor(Math.random() * ((window.innerHeight - 100) - 100) + 100),
-        src: '/images/monster.gif',
+        src: '/images/monster_2.gif',
       }
       setMonsters((current) => {
         setTimeout(() => {
