@@ -65,6 +65,7 @@ h1, h3, i {
 
 .install-app {
     display: none;
+    z-index: 99;
 }
 
 @media (max-width: 812px) {
