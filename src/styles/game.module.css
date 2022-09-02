@@ -1,0 +1,49 @@
+.score, .logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 4;
+}
+.score div {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+.score div:first-child {
+  font-size: 2rem;
+}
+
+.logo {
+  left: unset;
+  right: 2rem;
+  width: 7rem;
+}
+
+.survivors {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.game::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .3;
+    background-color: white;
+}
+
+.hit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: radial-gradient(#A8002800, #A8002880 60%);
+  transition: 300ms;
+  pointer-events: none;
+}

@@ -1,0 +1,45 @@
+.button {
+  position: relative;
+  transition: 300ms;
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button * {
+  padding-top: 11px;
+}
+
+.button a {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#FFFFFF 40%, #B7FFFB 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.button p {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 3rem;
+  background: #152E2C;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  position: absolute;
+  top: 3.5px;
+  user-select: none;
+  transition: 300ms;
+  z-index: -1;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button:hover p {
+  top: 7px;
+}

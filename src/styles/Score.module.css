@@ -1,0 +1,36 @@
+.score {
+  position: relative;
+}
+
+.score * {
+  font-family: 'Luckiest Guy', sans-serif;
+  padding-top: 3px;
+  font-size: 3.2rem;
+}
+
+.score p {
+  background: -webkit-linear-gradient(#FFF500, #8BFF78);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+.stroke, .shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.stroke {
+  color: #A80028;
+  -webkit-text-stroke: #A80028 5px;
+  z-index: -1;
+}
+
+.shadow {
+  z-index: -2;
+  color: #5A1223;
+  -webkit-text-stroke: #5A1223 5px;
+  top: 3px;
+}

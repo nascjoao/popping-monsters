@@ -1,0 +1,89 @@
+@keyframes pulse {
+    from {
+        transform: scale(2.5);
+    } to {
+        transform: scale(3);
+    }
+}
+
+@keyframes backgroundMotion {
+    from {
+        background-position-x: 0;
+    } to {
+        background-position-x: -240px;
+    }
+}
+
+.header * {
+    position: relative;
+    z-index: 2;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    gap: 3rem;
+}
+
+.brand img {
+    max-width: 100px;
+}
+
+.brand img:nth-child(2) {
+    animation: infinite 450ms pulse alternate linear;
+}
+
+.header span {
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.header a {
+    color: black;
+}
+
+.bestScore {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.bestScore i {
+    backdrop-filter: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../public/images/sand.png');
+    background-position-x: 0;
+    background-position-y: center;
+    transition: background-position-x 100ms;
+    width: 100%;
+    animation: backgroundMotion 15s infinite linear;
+}
+
+.home::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .9;
+    background: radial-gradient(#1D6155, #0A211D);
+}
