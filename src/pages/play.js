@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import LifeBar from '../components/LifeBar'
+import Score from '../components/Score'
 import useMonsters from '../hooks/useMonsters'
 import styles from '../styles/game.module.css'
 
@@ -12,6 +14,7 @@ export default function Play() {
     spawningMonsters
   } = useMonsters()
   const [gameOver, setGameOver] = useState(false)
+  const [hit, setHit] = useState(false)
   
   useEffect(() => {
     if (!gameOver) {
@@ -20,7 +23,11 @@ export default function Play() {
   }, [spawningMonsters, gameOver])
 
   useEffect(() => {
-    if (survivingMonsters.length === 10) setGameOver(true)
+    if (survivingMonsters.length === 10) {
+      setTimeout(() => {
+        setGameOver(true)
+      }, 1000)
+    }
   }, [survivingMonsters])
 
   if (gameOver) return (
@@ -29,9 +36,12 @@ export default function Play() {
 
   return (
     <div className={styles.game}>
+      <div className={styles.hit} style={{
+        opacity: 0 + (survivingMonsters.length / 9) 
+      }}></div>
       <div className={styles.score}>
-        <div>Pontuação: {killedMonsters.length}</div>
-        <div>Monstros sobreviventes: {survivingMonsters.length}</div>
+        <Score>{killedMonsters.length}</Score>
+        <LifeBar consumedValue={survivingMonsters.length} />
       </div>
       { monsters.map((monster) => (
         <img key={monster.id} src={monster.src} alt="monster" style={{
