@@ -1,4 +1,4 @@
-.score {
+.score, .logo {
   position: absolute;
   top: 2rem;
   left: 2rem;
@@ -10,6 +10,12 @@
 
 .score div:first-child {
   font-size: 2rem;
+}
+
+.logo {
+  left: unset;
+  right: 2rem;
+  width: 7rem;
 }
 
 .survivors {

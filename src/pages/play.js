@@ -43,6 +43,7 @@ export default function Play() {
         <Score>{killedMonsters.length}</Score>
         <LifeBar consumedValue={survivingMonsters.length} />
       </div>
+      <img src="./images/logo.png" alt="Popping Monsters" className={styles.logo} />
       { monsters.map((monster) => (
         <img key={monster.id} src={monster.src} alt="monster" style={{
           position: 'absolute',
