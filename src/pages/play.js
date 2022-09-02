@@ -14,11 +14,11 @@ export default function Play() {
     spawningMonsters
   } = useMonsters()
   const [gameOver, setGameOver] = useState(false)
-  const [hit, setHit] = useState(false)
   
   useEffect(() => {
     if (!gameOver) {
-      spawnMonsters(1200)
+      const reachedLimit = 1200 - (spawningMonsters.length * 15) < 300
+      spawnMonsters(reachedLimit ? 300 : 1200 - (spawningMonsters.length * 15))
     }
   }, [spawningMonsters, gameOver])
 
