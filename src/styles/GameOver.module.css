@@ -1,0 +1,48 @@
+.gameOver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 180px;
+  gap: 3rem;
+}
+
+.gameOver * {
+  z-index: 2;
+}
+
+.gameOver::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .9;
+  background: radial-gradient(#1D6155, #0A211D);
+}
+
+.best {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

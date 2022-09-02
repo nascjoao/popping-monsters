@@ -68,12 +68,21 @@ export default function useMonsters() {
     }
   }
 
+  function resetMonsters() {
+    setMonsters([])
+    setKilledMonsters([])
+    setSurvivorMonster({})
+    setSurvivingMonsters([])
+    setSpawningMonsters([])
+  }
+
   return {
     monsters,
     spawnMonsters,
     hitMonster,
     survivingMonsters,
     killedMonsters,
-    spawningMonsters
+    spawningMonsters,
+    resetMonsters
   }
 }

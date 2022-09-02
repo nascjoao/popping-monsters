@@ -1,0 +1,58 @@
+.text, .accentText {
+  position: relative;
+}
+
+.text *, .accentText * {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 11px;
+  display: inline-block;
+}
+
+.text p {
+  background: -webkit-linear-gradient(#FFFFFF 40%, #B7FFFB 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 9;
+  position: relative;
+}
+
+.accentText p {
+  background: -webkit-linear-gradient(#FFF500, #8BFF78);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  z-index: 3;
+  position: relative;
+}
+
+.text .shadow {
+  color: #152E2C;
+  position: absolute;
+  top: 3.5px;
+  left: 0;
+  user-select: none;
+  z-index: -1;
+}
+
+.accentText .shadow {
+  z-index: -2;
+  color: #5A1223;
+  -webkit-text-stroke: #5A1223 5px;
+  top: 3.5px;
+  position: absolute;
+  left: 0;
+}
+
+.stroke {
+  color: #A80028;
+  -webkit-text-stroke: #A80028 5px;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+

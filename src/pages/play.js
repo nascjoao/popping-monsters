@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import GameOver from '../components/GameOver'
 import LifeBar from '../components/LifeBar'
 import Score from '../components/Score'
 import useMonsters from '../hooks/useMonsters'
@@ -11,7 +12,8 @@ export default function Play() {
     hitMonster,
     survivingMonsters,
     killedMonsters,
-    spawningMonsters
+    spawningMonsters,
+    resetMonsters
   } = useMonsters()
   const [gameOver, setGameOver] = useState(false)
   
@@ -30,8 +32,13 @@ export default function Play() {
     }
   }, [survivingMonsters])
 
+  function restartGame() {
+    resetMonsters()
+    setGameOver(false)
+  }
+
   if (gameOver) return (
-    <h1>Game Over</h1>
+    <GameOver score={killedMonsters.length} restartGame={restartGame} />
   )
 
   return (

@@ -10,7 +10,7 @@ export default function Home() {
             <img src="./images/monster_2.gif" />
             <img src="./images/logo.png" alt="Popping Monsters" />
         </div>
-        <Button href="/play">Jogar</Button>
+        <Button href="/play" fontSize="3rem">Jogar</Button>
         <span>desenvolvido com diversão<br /> por <a href="https://joaonasc.dev" target="_blank">João Nasc</a></span>
       </header>
       <div className={styles.bestScore}></div>
