@@ -8,7 +8,9 @@
   "dependencies": {
     "@fontsource/luckiest-guy": "^4.5.8",
     "next": "^12.2.5",
+    "next-pwa": "^5.6.0",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "uuid": "^8.3.2"
   }

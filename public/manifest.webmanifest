@@ -1,0 +1,25 @@
+{
+  "short_name": "Popping Monsters",
+  "name": "Popping Monsters: How many can you pop?",
+  "description": "Tap the screen to pop the monsters",
+  "related_applications": [{
+    "platform": "webapp",
+    "url": "http://pop.joaonasc.dev/manifest.webmanifest"
+  }],
+  "icons": [
+    {
+      "src": "./images/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#E5CC82",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
