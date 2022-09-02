@@ -57,6 +57,9 @@ export default function useMonsters() {
         }
         return monster;
       })
+      const splat = new Audio('./sounds/splat.mp3')
+      splat.volume = .5;
+      splat.play();
       setMonsters(monstersUpdated)
       setKilledMonsters((current) => [...current, foundMonster])
   
