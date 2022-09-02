@@ -6,7 +6,7 @@ export default function App({ Component, props }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="./images/monster.gif" type="image/x-icon" />
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
         <link rel="manifest" href="./manifest.webmanifest" />
         <title>Popping Monsters</title>
         <meta name="theme-color" content="#156E09" />
