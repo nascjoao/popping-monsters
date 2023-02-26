@@ -4,7 +4,7 @@
   "description": "Tap the screen to pop the monsters",
   "related_applications": [{
     "platform": "webapp",
-    "url": "https://pop.joaonasc.dev/manifest.webmanifest"
+    "url": "https://pop.nasc.dev/manifest.webmanifest"
   }],
   "icons": [
     {
